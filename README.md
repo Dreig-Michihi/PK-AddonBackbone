@@ -84,4 +84,4 @@ The easiest way to configurable it:
 ![Overriding isEnabled code](https://sun9-52.userapi.com/impg/GteE09Oc1teknTcP6aPl9GI3-XHGJWX7DyD_Lw/dBvEgKB4LOA.jpg?size=539x91&quality=96&sign=dbda0994c9b979f95564913b64befb45&type=album)
 
 [I want YOU to tap on the poster](https://boosty.to/dreig_michihi)
-[![I want YOU to support me on Boosty if you liked this or any of my other works ;)](https://cdna.artstation.com/p/assets/images/images/006/884/746/large/joseph-deshler-unclewangfire.jpg?1501978665)](https://boosty.to/dreig_michihi)
+[![I want YOU to support me on Boosty if you liked this or any of my other works ;)](https://i.etsystatic.com/28001671/r/il/0f66d4/2963569023/il_fullxfull.2963569023_rmjx.jpg)](https://boosty.to/dreig_michihi)
