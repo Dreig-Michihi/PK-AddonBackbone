@@ -76,5 +76,12 @@ Also you can use annotation @AssociatedAbility("<AbilityClass's name in the same
 ![Listener code](https://sun9-10.userapi.com/impg/qSNIUt_ExvYwphZGz_He9Pr7deLEZiUDgZNZsw/gX6sauyXP9s.jpg?size=1271x646&quality=96&sign=dbc68069f7f87e3d46802716978a62a1&type=album)
 So you can have separate Listeners for each ability and it won't look too bad for your eyes.
 
+# Overriding CoreAbility#isEnabled method
+
+I couldn't add default overriding implementation for this method in PluginAbility interface, because CoreAbility is overriding it too.
+
+The easiest way to configurable it:
+![Overriding isEnabled code](https://sun9-52.userapi.com/impg/GteE09Oc1teknTcP6aPl9GI3-XHGJWX7DyD_Lw/dBvEgKB4LOA.jpg?size=539x91&quality=96&sign=dbda0994c9b979f95564913b64befb45&type=album)
+
 [I want YOU to support me on Boosty if you liked this or any of my other works ;)](https://boosty.to/dreig_michihi)
-![enter image description here](https://i.etsystatic.com/28001671/r/il/0f66d4/2963569023/il_fullxfull.2963569023_rmjx.jpg)
+![[I want YOU to support me on Boosty if you liked this or any of my other works ;)](https://boosty.to/dreig_michihi)](https://i.etsystatic.com/28001671/r/il/0f66d4/2963569023/il_fullxfull.2963569023_rmjx.jpg)
