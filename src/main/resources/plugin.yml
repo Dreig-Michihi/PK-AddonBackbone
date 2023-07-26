@@ -1,0 +1,15 @@
+main: ${groupId}.PluginAddon
+abilities-package-base: ${groupId}.bending
+debug-info: false
+depend: [ ProjectKorra ]
+author: Dreig_Michihi
+authors: [ Dreig_Michihi ]
+
+name: ${project.name}
+version: ${project.version}
+groupId: ${groupId}
+full-name: ${name}-V${version}
+prefix: ${project.name}
+description: ${project.description}
+
+api-version: 1.17
