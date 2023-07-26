@@ -71,7 +71,9 @@ To make a Listener, all you have to do - make a separate Listener file somewhere
 **All the Listeners there will be registered and unregistered automatically!**
 >In my case - it's me.dreig_michihi.addonbackbone.bending
 
-![enter image description here](https://sun9-2.userapi.com/impg/_EOq7o4SbUEgKpNzU7_UvBJpBAROJsCTp0VgEA/-XbISQXDgLE.jpg?size=1254x402&quality=96&sign=70f65d03f6b533a8529a5872df4d633b&type=album)
+Also you can use annotation @AssociatedAbility("<AbilityClass's name in the same package here>"), so the listener will be enabled only when the associated ability is enabled!
+
+![Listener code](https://sun9-10.userapi.com/impg/qSNIUt_ExvYwphZGz_He9Pr7deLEZiUDgZNZsw/gX6sauyXP9s.jpg?size=1271x646&quality=96&sign=dbc68069f7f87e3d46802716978a62a1&type=album)
 So you can have separate Listeners for each ability and it won't look too bad for your eyes.
 
 [I want YOU to support me on Boosty if you liked this or any of my other works ;)](https://boosty.to/dreig_michihi)
