@@ -81,6 +81,7 @@ So you can have separate Listeners for each ability and it won't look too bad fo
 I couldn't add default overriding implementation for this method in PluginAbility interface, because CoreAbility is overriding it too.
 
 The easiest way to configurable it:
+
 ![Overriding isEnabled code](https://sun9-52.userapi.com/impg/GteE09Oc1teknTcP6aPl9GI3-XHGJWX7DyD_Lw/dBvEgKB4LOA.jpg?size=539x91&quality=96&sign=dbda0994c9b979f95564913b64befb45&type=album)
 
 [I want YOU to tap on the poster](https://boosty.to/dreig_michihi)
