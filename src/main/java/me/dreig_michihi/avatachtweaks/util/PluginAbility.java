@@ -1,8 +1,8 @@
-package me.dreig_michihi.addonbackbone.util;
+package me.dreig_michihi.avatachtweaks.util;
 
 import com.projectkorra.projectkorra.ability.Ability;
 import com.projectkorra.projectkorra.ability.AddonAbility;
-import me.dreig_michihi.addonbackbone.PluginAddon;
+import me.dreig_michihi.avatachtweaks.PluginAddon;
 
 public interface PluginAbility extends AddonAbility, Ability {
 

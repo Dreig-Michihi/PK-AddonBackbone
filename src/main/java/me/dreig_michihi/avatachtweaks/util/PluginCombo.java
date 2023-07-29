@@ -1,10 +1,10 @@
-package me.dreig_michihi.addonbackbone.util;
+package me.dreig_michihi.avatachtweaks.util;
 
 import com.projectkorra.projectkorra.ability.ComboAbility;
 import com.projectkorra.projectkorra.ability.util.ComboManager;
 import com.projectkorra.projectkorra.ability.util.ComboUtil;
 import com.projectkorra.projectkorra.configuration.ConfigManager;
-import me.dreig_michihi.addonbackbone.config.PluginConfig;
+import me.dreig_michihi.avatachtweaks.config.PluginConfig;
 
 import java.util.ArrayList;
 

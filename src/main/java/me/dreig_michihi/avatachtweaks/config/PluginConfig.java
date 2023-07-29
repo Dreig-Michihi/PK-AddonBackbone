@@ -1,11 +1,11 @@
-package me.dreig_michihi.addonbackbone.config;
+package me.dreig_michihi.avatachtweaks.config;
 
 import com.projectkorra.projectkorra.ProjectKorra;
 import com.projectkorra.projectkorra.ability.ComboAbility;
 import com.projectkorra.projectkorra.ability.PassiveAbility;
 import commonslang3.projectkorra.lang3.StringUtils;
-import me.dreig_michihi.addonbackbone.PluginAddon;
-import me.dreig_michihi.addonbackbone.util.PluginAbility;
+import me.dreig_michihi.avatachtweaks.PluginAddon;
+import me.dreig_michihi.avatachtweaks.util.PluginAbility;
 import org.bukkit.Bukkit;
 
 import java.io.IOException;
