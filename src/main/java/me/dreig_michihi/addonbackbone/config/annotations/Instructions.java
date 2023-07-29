@@ -1,4 +1,4 @@
-package me.dreig_michihi.avatachtweaks.config.annotations;
+package me.dreig_michihi.addonbackbone.config.annotations;
 
 import java.lang.annotation.Inherited;
 import java.lang.annotation.Retention;
