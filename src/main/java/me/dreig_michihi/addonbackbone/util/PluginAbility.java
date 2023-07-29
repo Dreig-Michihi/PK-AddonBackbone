@@ -25,4 +25,9 @@ public interface PluginAbility extends AddonAbility, Ability {
 	default String getVersion() {
 		return PluginAddon.get("full-name");
 	}
+
+	@Override
+	default String getName() {
+		return this.getClass().getSimpleName();
+	}
 }

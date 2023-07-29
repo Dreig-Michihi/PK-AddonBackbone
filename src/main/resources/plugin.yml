@@ -1,6 +1,6 @@
 main: ${groupId}.PluginAddon
 abilities-package-base: ${groupId}.bending
-debug-info: false
+debug-info: true
 depend: [ ProjectKorra ]
 author: Dreig_Michihi
 authors: [ Dreig_Michihi ]

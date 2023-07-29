@@ -8,11 +8,13 @@ import com.projectkorra.projectkorra.configuration.ConfigManager;
 import com.projectkorra.projectkorra.event.BendingReloadEvent;
 import me.dreig_michihi.addonbackbone.config.PluginConfig;
 import me.dreig_michihi.addonbackbone.config.annotations.AssociatedAbility;
+import me.dreig_michihi.addonbackbone.config.annotations.Combo;
 import me.dreig_michihi.addonbackbone.config.annotations.Comment;
 import me.dreig_michihi.addonbackbone.config.annotations.Configurable;
 import me.dreig_michihi.addonbackbone.config.annotations.Description;
 import me.dreig_michihi.addonbackbone.config.annotations.Instructions;
 import me.dreig_michihi.addonbackbone.util.PluginAbility;
+import me.dreig_michihi.addonbackbone.util.PluginCombo;
 import net.md_5.bungee.api.ChatColor;
 import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
@@ -28,6 +30,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Modifier;
+import java.util.Arrays;
 import java.util.Enumeration;
 import java.util.Properties;
 import java.util.jar.JarEntry;
@@ -178,6 +181,10 @@ public final class PluginAddon extends JavaPlugin {
 			}
 			debugInfo("");
 		}
+		ConfigManager.defaultConfig.save();
+		debugInfo("DEFAULT CONFIG SAVED.");
+		ConfigManager.languageConfig.save();
+		debugInfo("LANGUAGE CONFIG SAVED.");
 		debugInfo("\nhandleJar() end");
 	}
 
@@ -215,9 +222,26 @@ public final class PluginAddon extends JavaPlugin {
 			} else {
 				debugInfo("\"@Description\" annotation isn't present.");
 			}
+			debugInfo("");
+		}
+		if (ability instanceof PluginCombo) {
+			debugInfo("The ability " + ability.getName() + " is a PluginCombo!");
+			String path = PluginConfig.getPath((PluginAbility) ability, "Combination");
+			if (!ConfigManager.defaultConfig.get().contains(path)) {
+				if (ability.getClass().isAnnotationPresent(Combo.class)) {
+					debugInfo("The ability " + ability.getName() + " has \"@Combo\" attribute. Trying to add value to the config.");
+					String[] combo = ability.getClass().getAnnotation(Combo.class).value();
+					ConfigManager.defaultConfig.get().addDefault(path, Arrays.asList(combo));
+				} else {
+					debugInfo("The ability " + ability.getName() + " has no \"@Combo\" attribute.");
+				}
+			} else {
+				debugInfo("The ability has combo sequence in the config.");
+			}
 		}
 		debugInfo("Checking fields.");
 		for (Field field : clazz.getDeclaredFields()) {
+			debugInfo("Field \"" + field.getName() + "...");
 			if (field.isAnnotationPresent(Configurable.class)) {
 				debugInfo("Field \"" + field.getName() + "\" is configurable!");
 				debugInfo("\"@Configurable\" annotation is present.");
@@ -259,7 +283,6 @@ public final class PluginAddon extends JavaPlugin {
 								"Generating default config string.");
 						if (field.trySetAccessible()) {
 							ConfigManager.defaultConfig.get().addDefault(path, field.get(null));
-							ConfigManager.defaultConfig.save();
 						} else {
 							debugInfo("Can't get default config value " + path);
 						}
